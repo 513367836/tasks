@@ -11,6 +11,8 @@
             border:0;   /*去除边框*/
             margin:0;   /*去除外边距*/
             background-color: #68cdd5;
+            width: 100%;
+            height: 100%;
             font-family : "Lucida Grande", Verdana, Lucida, Arial, Helvetica, 宋体,sans-serif;
         }
 
@@ -18,46 +20,58 @@
             margin: 5px;
         }
         .back a{
+            width: 50px;
+            height: 50px;
             background:url(./images/back.png) no-repeat;
-            width: 59px;
-            height: 57px;
+            -moz-background-size:50px 50px; /* 老版本的 Firefox */
+            background-size:50px 50px;
             line-height: 30px;
             text-align: center;
             display: inline-block;
         }
+        .content{
+            margin: 20px 10% 0 10%;
+        }
         .logo {
             width: 100%;
-            margin-top: 50px;
             text-align: center;
-            height: auto;
         }
         .memo{
+            margin:30px 0;
+            width: 100%;
+            text-align: center;
             font-size: 1.4em;
             color: #ffffff;
         }
-        .box{
-            width:20%;
-            float: left;
-            margin: 15vw;
-        }
 
+        .box{
+            width: 30%;
+            margin: 0 10%;
+            text-align: center;
+            float: left;
+        }
         .left {
-             background:url(./images/left.png) no-repeat;
-             width: 100px;
-             height: 100px;
+             background:url(./images/icon1.png) no-repeat;
+             width: 60px;
+             height: 60px;
+             -moz-background-size:60px 60px; /* 老版本的 Firefox */
+             background-size:60px 60px;
+             text-align: center;
              float: left;
         }
         .right {
-            background:url(./images/right.png) no-repeat;
-            width: 100px;
-            height: 100px;
-            float: left;
+             background:url(./images/icon2.png) no-repeat;
+             width: 60px;
+             height: 60px;
+             -moz-background-size:60px 60px; /* 老版本的 Firefox */
+             background-size:60px 60px;
+             float: right;
+             text-align: center;
         }
         .memo2{
-            margin-top: 120px;
+            margin-top: 70px;
             font-size: 1.2em;
             color: #ffffff;
-            clear:both;
         }
     </style>
 </head>
@@ -67,22 +81,21 @@
                 <a href="javascript:;"></a>
             </div>
 
-            <div class="logo">
-               <img width="100" src="images/logo2.png">
-            </div>
+            <div class="content">
+                <div class="logo">
+                    <img src="images/logo.png">
+                </div>
 
-            <div class="logo memo">
-                葡萄藤轻游戏专注于桌游领域，提供在线杀人游戏，捉鬼，炸狼堡等多种聚会游戏，以下线下聚会桌游道具。
-            </div>
+                <div class="memo">
+                    葡萄藤轻游戏专注于桌游领域，提供在线杀人游戏，捉鬼，炸狼堡等多种聚会游戏，以下线下聚会桌游道具。
+                </div>
 
-            <div class="box">
-                <div class="left"><div class="memo2">290560933</div></div>
-
-            </div>
-
-            <div class="box">
-                <div class="right"><div class="memo2">BJPTTeng</div></div>
-
+                <div class="box">
+                    <div class="left"><div class="memo2">290560933</div></div>
+                </div>
+                <div class="box">
+                    <div class="right"><div class="memo2">BJPTTeng</div></div>
+                </div>
             </div>
         </div>
     </body>

@@ -1,0 +1,119 @@
+body {
+    padding:0;  /*去除内边距*/
+    border:0;   /*去除边框*/
+    margin:0;   /*去除外边距*/
+    width: 100%;
+    height: 100%;
+    background-color: #eff0f4;
+    font-family : "Microsoft YaHei",tahoma,arial,Hiragino Sans GB,宋体;
+}
+a{text-decoration:none}
+.header{
+    width: 100%;
+    height: 50px;
+    background-color: #5fc0cd;
+    margin-top: 0;
+}
+.title{
+    text-align: center;
+    color: #ffffff;
+    width: 60%;
+    float: left;
+    margin-top: 10px;
+    font-weight:600;
+}
+.close {
+    width: 20%;
+    float: left;
+}
+.signup{
+    width: 20%;
+    float: left;
+}
+
+.close a{
+    float: left;
+    padding: 10px 0 0 5px;
+    color: #ffffff;
+}
+.signup a{
+    color: #ffffff;
+    float: right;
+    padding: 10px 5px 0 0;
+}
+.content{
+    position:relative;
+}
+.row{
+    position:relative;
+    height:60px;
+}
+.row label{
+    width: 100%;
+    display: inline-block;
+    float: left;
+    padding-top: 10px;
+    position:relative;
+}
+.icon-prepend{
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    background:url(../images/mobile.png) no-repeat;
+    -moz-background-size:100% 50px; /* 老版本的 Firefox */
+    background-size:100% 50px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    left: 0;
+}
+.icon-prepend2{
+    width: 70px;
+    height: 50px;
+    position: absolute;
+    background:url(../images/pwd.png) no-repeat;
+    -moz-background-size:100% 50px; /* 老版本的 Firefox */
+    background-size:100% 50px;
+    line-height: 30px;
+    text-align: center;
+    display: inline-block;
+    left: 0;
+}
+.input{
+    margin-left: 70px;
+    -moz-appearance: none;
+    background: #fff none repeat scroll 0 0;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 0;
+    box-sizing: border-box;
+    color: #404040;
+    font: 15px/23px "Open Sans",Helvetica,Arial,sans-serif;
+    height: 50px;
+    outline: medium none;
+    padding: 0;
+    width: 100%;
+    overflow:hidden;
+    display: inline-block;
+}
+
+.login{
+    text-align: center;
+    background-color: #5fc0cd;
+    margin-top: 10px;
+    text-align: center;
+    padding: 10px;
+    font-weight:600;
+}
+
+.login a{
+    color: #ffffff;
+    text-align: center;
+    margin-top: 10px;
+}
+.forget a{
+    float: right;
+    margin: 5px 5px 0 0;
+    color: #5fc0cd;
+    text-decoration:underline;
+}

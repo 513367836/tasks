@@ -21,6 +21,7 @@ a{text-decoration:none}
     float: left;
     margin-top: 10px;
     font-weight:600;
+    font-size: 1em;
 }
 .close {
     width: 20%;
@@ -41,48 +42,13 @@ a{text-decoration:none}
     float: right;
     padding: 10px 5px 0 0;
 }
-.content{
-    position:relative;
-}
-.row{
-    position:relative;
-    height:60px;
-}
-.row label{
-    width: 100%;
-    display: inline-block;
-    float: left;
-    padding-top: 10px;
-    position:relative;
-}
-.icon-prepend{
-    width: 70px;
-    height: 50px;
-    position: absolute;
-    background:url(../images/mobile.png) no-repeat;
-    -moz-background-size:100% 50px; /* 老版本的 Firefox */
-    background-size:100% 50px;
-    line-height: 30px;
-    text-align: center;
-    display: inline-block;
-    left: 0;
-}
-.icon-prepend2{
-    width: 70px;
-    height: 50px;
-    position: absolute;
-    background:url(../images/pwd.png) no-repeat;
-    -moz-background-size:100% 50px; /* 老版本的 Firefox */
-    background-size:100% 50px;
-    line-height: 30px;
-    text-align: center;
-    display: inline-block;
-    left: 0;
-}
+
 .input{
-    margin-left: 70px;
-    -moz-appearance: none;
-    background: #fff none repeat scroll 0 0;
+    margin-top: 10px;
+    padding-left:50px;
+    background:url(../images/mobile.png) no-repeat scroll left center transparent;
+    background-size:50px 50px;
+    background-color: #fff;
     border-radius: 0;
     border-style: solid;
     border-width: 0;
@@ -91,10 +57,26 @@ a{text-decoration:none}
     font: 15px/23px "Open Sans",Helvetica,Arial,sans-serif;
     height: 50px;
     outline: medium none;
-    padding: 0;
-    width: 100%;
-    overflow:hidden;
     display: inline-block;
+    width: 100%;
+}
+
+.pwd-input{
+    margin-top: 10px;
+    padding-left:50px;
+    background:url(../images/pwd.png) no-repeat scroll left center transparent;
+    background-size:50px 50px;
+    background-color: #fff;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 0;
+    box-sizing: border-box;
+    color: #404040;
+    font: 15px/23px "Open Sans",Helvetica,Arial,sans-serif;
+    height: 50px;
+    outline: medium none;
+    display: inline-block;
+    width: 100%;
 }
 
 .login{
@@ -104,13 +86,12 @@ a{text-decoration:none}
     text-align: center;
     padding: 10px;
     font-weight:600;
+    width:100%;
+    border: 0;
+    font-size: 1.2em;
+    color: #ffffff;
 }
 
-.login a{
-    color: #ffffff;
-    text-align: center;
-    margin-top: 10px;
-}
 .forget a{
     float: right;
     margin: 5px 5px 0 0;

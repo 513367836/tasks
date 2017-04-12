@@ -21,8 +21,30 @@
 
 <div class="main">
     <div aria-label="Justified button group with nested dropdown" role="group" class="btn-group btn-group-justified">
-        <a role="button" class="btn btn-default" href="#">Left</a>
-        <a role="button" class="btn btn-default" href="#">Middle</a>
+        <div role="group" class="btn-group">
+            <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle" href="#">
+                Dropdown <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider" role="separator"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
+        <div role="group" class="btn-group">
+            <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle" href="#">
+                Dropdown <span class="caret"></span>
+            </a>
+            <ul class="dropdown-menu">
+                <li><a href="#">Action</a></li>
+                <li><a href="#">Another action</a></li>
+                <li><a href="#">Something else here</a></li>
+                <li class="divider" role="separator"></li>
+                <li><a href="#">Separated link</a></li>
+            </ul>
+        </div>
         <div role="group" class="btn-group">
             <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle" href="#">
                 Dropdown <span class="caret"></span>

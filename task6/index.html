@@ -4,26 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>task6</title>
-    <link rel="stylesheet" href="./css/bootstrap.min.css" type="text/css">
+
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
     <link rel="stylesheet" href="./css/index.css" type="text/css">
 </head>
 <body>
 
-<nav class="navbar navbar-default navbar-fixed-top header">
-    <div class="container">
-        <a class="icon icon-map" href="javascript:;"></a>
-        <div class="btn-group actions" role="group" aria-label="...">
-            <button type="button" class="btn btn-default active">找雇主</button>
-            <button type="button" class="btn btn-default">找护工</button>
+<div class="header">
+    <nav class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <a class="icon icon-map" href="javascript:;"></a>
+            <div class="btn-group actions" role="group" aria-label="...">
+                <button type="button" class="btn btn-default active">找雇主</button>
+                <button type="button" class="btn btn-default">找护工</button>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
+</div>
+
 
 <div class="main">
-    <div aria-label="Justified button group with nested dropdown" role="group" class="btn-group btn-group-justified">
+    <div aria-label="Justified button group with nested dropdown" role="group" class="btn-group btn-group-justified mtb1">
         <div role="group" class="btn-group">
-            <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle" href="#">
-                Dropdown <span class="caret"></span>
+            <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown"
+               class="btn btn-default dropdown-toggle cborder" href="#">
+                所在地 <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
                 <li><a href="#">Action</a></li>
@@ -33,23 +44,28 @@
                 <li><a href="#">Separated link</a></li>
             </ul>
         </div>
+
+
         <div role="group" class="btn-group">
-            <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle" href="#">
-                Dropdown <span class="caret"></span>
+            <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown"
+               class="btn btn-default dropdown-toggle cb-on-left" href="#">
+                食宿 <span class="caret"></span>
             </a>
             <ul class="dropdown-menu">
                 <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
+                <li><a href="#">Another</a></li>
+                <li><a href="#">Something</a></li>
                 <li class="divider" role="separator"></li>
-                <li><a href="#">Separated link</a></li>
+                <li><a href="#">Separated</a></li>
             </ul>
         </div>
+
         <div role="group" class="btn-group">
-            <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown" class="btn btn-default dropdown-toggle" href="#">
-                Dropdown <span class="caret"></span>
+            <a aria-expanded="false" aria-haspopup="true" role="button" data-toggle="dropdown"
+               class="btn btn-default dropdown-toggle cb-on-left" href="#">
+                病人情况 <span class="caret"></span>
             </a>
-            <ul class="dropdown-menu">
+            <ul class="dropdown-menu dropdown-menu-right">
                 <li><a href="#">Action</a></li>
                 <li><a href="#">Another action</a></li>
                 <li><a href="#">Something else here</a></li>
@@ -59,77 +75,120 @@
         </div>
     </div>
 
-    <div class="top">
-        <div class="userinfo">
-            <img src="./images/header.png"/>
-            <div class="name">
-                <div class="username">张三 <span>36岁</span></div>
-                <div class="address">北京 - 朝阳区 - XXx</div>
+    <div class="row fullrow">
+        <div class="col-xs-12 con-list">
+            <div class="col-md-12"><div class="list-title"><div class="icon icon-date"></div>服务日期</div></div>
+            <div class="col-md-12">
+                <div class="list-date">2015-7-15至2017-7-15</div>
+                <div class="list-price">25元/小时<div class="icon icon-next"></div></div>
             </div>
+            <div class="col-md-12"><div class="list-address"><div class="icon icon-address"></div>北京 - 朝阳区 - XXx</div></div>
         </div>
-    </div>
-    <div class="title"><span>专业技能</span></div>
-    <div class="content">
-        <div class="row">
-            <div class="star">住家</div>
-            <div class="star">不含餐</div>
-        </div>
-        <div class="row">
-            <div class="label">从业年限</div>
-            <div class="separator"></div>
-            <div class="info">0-3年</div>
-        </div>
-        <div class="row">
-            <div class="label">工作时间</div>
-            <div class="separator"></div>
-            <div class="info">全天</div>
-        </div>
-        <div class="row">
-            <div class="label">服务价格</div>
-            <div class="separator"></div>
-            <div class="info fix">25元/小时</div>
-        </div>
-        <div class="row">
-            <div class="label">自我介绍 </div>
-            <div class="separator"></div>
-            <div class="info memo">可以洗衣做饭照顾老人，可以洗衣做饭照顾老人，可以洗衣做饭照顾老人，可以洗衣做饭照顾老人，
-                可以洗衣做饭照顾老人，可以洗衣做饭照顾老人，可以洗衣做饭照顾老人，可以洗衣做饭照顾老人
+
+        <div class="col-xs-12 con-list">
+            <div class="col-md-12"><div class="list-title"><div class="icon icon-date"></div>服务日期</div></div>
+            <div class="col-md-12">
+                <div class="list-date">2015-7-15至2017-7-15</div>
+                <div class="list-price">25元/小时<div class="icon icon-next"></div></div>
             </div>
+            <div class="col-md-12"><div class="list-address"><div class="icon icon-address"></div>北京 - 朝阳区 - XXx</div></div>
         </div>
+
+        <div class="col-xs-12 con-list">
+            <div class="col-md-12"><div class="list-title"><div class="icon icon-date"></div>服务日期</div></div>
+            <div class="col-md-12">
+                <div class="list-date">2015-7-15至2017-7-15</div>
+                <div class="list-price">25元/小时<div class="icon icon-next"></div></div>
+            </div>
+            <div class="col-md-12"><div class="list-address"><div class="icon icon-address"></div>北京 - 朝阳区 - XXx</div></div>
+        </div>
+
+        <div class="col-xs-12 con-list">
+            <div class="col-md-12"><div class="list-title"><div class="icon icon-date"></div>服务日期</div></div>
+            <div class="col-md-12">
+                <div class="list-date">2015-7-15至2017-7-15</div>
+                <div class="list-price">25元/小时<div class="icon icon-next"></div></div>
+            </div>
+            <div class="col-md-12"><div class="list-address"><div class="icon icon-address"></div>北京 - 朝阳区 - XXx</div></div>
+        </div>
+
+        <div class="col-xs-12 con-list">
+            <div class="col-md-12"><div class="list-title"><div class="icon icon-date"></div>服务日期</div></div>
+            <div class="col-md-12">
+                <div class="list-date">2015-7-15至2017-7-15</div>
+                <div class="list-price">25元/小时<div class="icon icon-next"></div></div>
+            </div>
+            <div class="col-md-12"><div class="list-address"><div class="icon icon-address"></div>北京 - 朝阳区 - XXx</div></div>
+        </div>
+
+        <div class="col-xs-12 con-list">
+            <div class="col-md-12"><div class="list-title"><div class="icon icon-date"></div>服务日期</div></div>
+            <div class="col-md-12">
+                <div class="list-date">2015-7-15至2017-7-15</div>
+                <div class="list-price">25元/小时<div class="icon icon-next"></div></div>
+            </div>
+            <div class="col-md-12"><div class="list-address"><div class="icon icon-address"></div>北京 - 朝阳区 - XXx</div></div>
+        </div>
+
+        <div class="col-xs-12 con-list">
+            <div class="col-md-12"><div class="list-title"><div class="icon icon-date"></div>服务日期</div></div>
+            <div class="col-md-12">
+                <div class="list-date">2015-7-15至2017-7-15</div>
+                <div class="list-price">25元/小时<div class="icon icon-next"></div></div>
+            </div>
+            <div class="col-md-12"><div class="list-address"><div class="icon icon-address"></div>北京 - 朝阳区 - XXx</div></div>
+        </div>
+
+        <div class="col-xs-12 con-list">
+            <div class="col-md-12"><div class="list-title"><div class="icon icon-date"></div>服务日期</div></div>
+            <div class="col-md-12">
+                <div class="list-date">2015-7-15至2017-7-15</div>
+                <div class="list-price">25元/小时<div class="icon icon-next"></div></div>
+            </div>
+            <div class="col-md-12"><div class="list-address"><div class="icon icon-address"></div>北京 - 朝阳区 - XXx</div></div>
+        </div>
+
+        <div class="col-xs-12 con-list">
+            <div class="col-md-12"><div class="list-title"><div class="icon icon-date"></div>服务日期</div></div>
+            <div class="col-md-12">
+                <div class="list-date">2015-7-15至2017-7-15</div>
+                <div class="list-price">25元/小时<div class="icon icon-next"></div></div>
+            </div>
+            <div class="col-md-12"><div class="list-address"><div class="icon icon-address"></div>北京 - 朝阳区 - XXx</div></div>
+        </div>
+
+        <div class="col-xs-12 con-list">
+            <div class="col-md-12"><div class="list-title"><div class="icon icon-date"></div>服务日期</div></div>
+            <div class="col-md-12">
+                <div class="list-date">2015-7-15至2017-7-15</div>
+                <div class="list-price">25元/小时<div class="icon icon-next"></div></div>
+            </div>
+            <div class="col-md-12"><div class="list-address"><div class="icon icon-address"></div>北京 - 朝阳区 - XXx</div></div>
+        </div>
+
     </div>
 </div>
-
-<nav class="navbar navbar-default navbar-fixed-bottom">
-    <div class="container">
-        <div class="act-btns home">
-            <a class="icon icon-home"></a>
-            首页
-        </div>
-        <div class="act-btns feedback">
-            <a class="icon icon-feed"></a>
-        </div>
-        <div class="act-btns center">
-            <a class="icon icon-center"></a>
-            我的
-        </div>
-    </div>
-</nav>
 
 <div class="footer">
-    <div class="footer-acts">
-        <div class="act-btns home">
-            <a class="icon icon-home"></a>
-            首页
+    <nav class="navbar navbar-default navbar-fixed-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 footer-actions">
+                    <div class="col-xs-4">
+                        <button class="act-btn icon icon-home"></button>
+                        <div class="footer-txt">首页</div>
+                    </div>
+                    <div class="col-xs-4">
+                        <button class="feedback icon icon-feed"></button>
+                    </div>
+                    <div class="col-xs-4">
+                        <button class="act-btn icon icon-center"></button>
+                        <div class="footer-txt">我的</div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="act-btns feedback">
-            <a class="icon icon-feed"></a>
-        </div>
-        <div class="act-btns center">
-            <a class="icon icon-center"></a>
-            我的
-        </div>
-    </div>
+    </nav>
 </div>
-
 </body>
 </html>

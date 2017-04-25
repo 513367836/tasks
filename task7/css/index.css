@@ -1,0 +1,101 @@
+a{text-decoration:none}
+input,button,select,textarea{outline:none;}
+.header{
+    height: 5rem;
+}
+.header nav{
+    background-color: #29bde0;
+    text-align: center;
+}
+.menu-map{
+    background: transparent url("../images/menu-map.png") no-repeat scroll left center / 60px 50px;
+    float: left;
+    height: 50px;
+    width: 60px;
+}
+.lasted-title{
+    font-size: 1.8rem;
+}
+.i-lasted{
+    background: transparent url("../images/i-next.png") no-repeat scroll left center / 15px 25px;
+    height: 25px;
+    width: 15px;
+    float: right;
+}
+.e-jumbotron{
+    padding-top: 10px;
+    background-color: #f0f0f0;
+}
+.e-jumbotron .panel-heading {
+    background-color: #ffffff;
+    padding: 15px;
+}
+.e-jumbotron .panel{
+    margin-bottom: 10px;
+}
+.games-title{
+    font-size: 1.8rem;
+    color: #fbb435;
+}
+.games-panel{
+    border-color:#fbb435 !important;
+}
+.container li.list-group-item {
+    border: 0 none;
+    padding-bottom: 0;
+}
+.games-list-title {
+    line-height: 8vh;
+    background-color: #69d1e9;
+    font-size: 1.6rem;
+    color: #ffffff;
+    margin: 0 5%;
+}
+.games-list-title a{
+    color: #ffffff;
+}
+.games-list-account {
+    padding-top: 10px;
+    font-size: 1.2rem;
+    color: #a1a1a1;
+}
+a.i-next-page {
+    background: transparent url(../images/i-next2.png) no-repeat scroll left center / 20px 30px;
+    height: 20px;
+    width: 30px;
+    float: right;
+    position: absolute;
+    bottom: -30vh;
+    right: 5vh;
+}
+
+.xs-90{
+    width: 90%;
+}
+.xs-10{
+    width: 10%;
+}
+.list-page{
+    background-color: #F0F0F0 !important;
+    border-radius: 50% !important;
+    height: 2vh;
+    width: 2vh;
+    display: inline;
+    float: left;
+    margin-left: 5px !important;
+    padding: 0 !important;
+}
+.list-page.active{
+    background-color: #69d1e9 !important;
+}
+.b-page-list {
+    margin: auto auto;
+    margin-bottom: 20px;
+    width: 80%;
+}
+/*f0f0f0
+69d1e9
+
+  fbb435
+787878
+a1a1a1*/
